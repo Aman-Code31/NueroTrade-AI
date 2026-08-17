@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F5F2E8;
+  background-image: radial-gradient(rgba(18,19,26,0.12) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-ticker {
+  animation: scroll-left 34s linear infinite;
+}
+
+.stripe-bar {
+  height: 7px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #FFC72C 0px, #FFC72C 14px,
+    #12131A 14px, #12131A 28px
+  );
+}
